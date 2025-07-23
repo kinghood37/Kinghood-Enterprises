@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KINGHOOD ENTERPRISES - Kenya's Premier Mitumba Empire</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #1d4ed8 100%);
+        }
+        .floating-card {
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        .hover-scale:hover {
+            transform: scale(1.03);
+        }
+        .section-divider {
+            height: 80px;
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h100v100H0z' fill='none'/%3E%3Cpath d='M20 20h60v60H20z' stroke='%231E40AF' stroke-width='0.5' stroke-dasharray='5,5' fill='none'/%3E%3C/svg%3E");
+            background-size: 20px 20px;
+        }
+        .stats-gradient {
+            background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
+        }
+        .profit-animation {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mr-3">
+                    <i class="fas fa-crown text-white text-xl"></i>
+                </div>
+                <div>
+                    <h1 class="text-xl font-bold text-blue-800">KINGHOOD ENTERPRISES</h1>
+                    <p class="text-xs text-gray-600">Kenya's Premier Mitumba Empire</p>
+                </div>
+            </div>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-8">
+                    <li><a href="#about" class="text-blue-800 hover:text-blue-600 font-medium">About</a></li>
+                    <li><a href="#locations" class="text-blue-800 hover:text-blue-600 font-medium">Locations</a></li>
+                    <li><a href="#financials" class="text-blue-800 hover:text-blue-600 font-medium">Financials</a></li>
+                    <li><a href="#investors" class="text-blue-800 hover:text-blue-600 font-medium">Investors</a></li>
+                    <li><a href="#contact" class="text-blue-800 hover:text-blue-600 font-medium">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="md:hidden text-blue-800" id="mobile-menu-button">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-white py-4 px-4 border-t" id="mobile-menu">
+            <ul class="space-y-3">
+                <li><a href="#about" class="block text-blue-800 hover:text-blue-600">About</a></li>
+                <li><a href="#locations" class="block text-blue-800 hover:text-blue-600">Locations</a></li>
+                <li><a href="#financials" class="block text-blue-800 hover:text-blue-600">Financials</a></li>
+                <li><a href="#investors" class="block text-blue-800 hover:text-blue-600">Investors</a></li>
+                <li><a href="#contact" class="block text-blue-800 hover:text-blue-600">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-20 md:py-32 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-0 left-0 w-full h-full bg-repeat" style="background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2IiBoZWlnaHQ9IjYiPgo8cmVjdCB3aWR0aD0iNiIgaGVpZ2h0PSI2IiBmaWxsPSIjMDAwMDAwIj48L3JlY3Q+CjxwYXRoIGQ9Ik0wIDBMNiA2WiIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2U9IiMxMTExMTEiPjwvcGF0aD4KPHBhdGggZD0iTTYgMEwwIDZaIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZT0iIzExMTExMSI+PC9wYXRoPgo8L3N2Zz4=');"></div>
+        </div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-3xl">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Building Kenya's Premier <span class="text-yellow-300">Mitumba Empire</span></h1>
+                <p class="text-xl md:text-2xl mb-8">Investor-ready business blueprint with projected net profits exceeding KSh 172 million in 5 years.</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#investors" class="bg-yellow-400 hover:bg-yellow-500 text-blue-900 font-bold py-3 px-6 rounded-lg text-center transition duration-300 hover-scale">
+                        <i class="fas fa-hand-holding-usd mr-2"></i> Investment Opportunities
+                    </a>
+                    <a href="#contact" class="bg-white hover:bg-gray-100 text-blue-800 font-bold py-3 px-6 rounded-lg text-center transition duration-300 hover-scale">
+                        <i class="fas fa-envelope mr-2"></i> Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-blue-800 mb-4">Executive Summary & Vision</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-gray-50 rounded-xl p-8 shadow-md hover-scale transition duration-300 floating-card">
+                    <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                        Kinghood Enterprises aims to dominate Kenya's mitumba market by combining prime physical stalls, a powerful digital sales platform, and rigorous remote management. With initial capital of KSh 760,150 and a proposed KSh 1 million investment repayable in 3 months at 17% interest, we project net profits exceeding KSh 1 million monthly by month 7.
+                    </p>
+                    <div class="flex flex-wrap justify-center gap-4 mt-8">
+                        <div class="bg-blue-100 rounded-lg p-4 text-center w-full sm:w-48">
+                            <div class="text-3xl font-bold text-blue-800">KSh 40B+</div>
+                            <div class="text-sm text-gray-600">Annual Market Size</div>
+                        </div>
+                        <div class="bg-blue-100 rounded-lg p-4 text-center w-full sm:w-48">
+                            <div class="text-3xl font-bold text-blue-800">4</div>
+                            <div class="text-sm text-gray-600">Strategic Locations</div>
+                        </div>
+                        <div class="bg-blue-100 rounded-lg p-4 text-center w-full sm:w-48">
+                            <div class="text-3xl font-bold text-blue-800">25%</div>
+                            <div class="text-sm text-gray-600">Digital Growth</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Market Landscape Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-blue-800 mb-4">Market Landscape & Industry Context</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl p-6 shadow-md hover-scale transition duration-300">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-800 mb-3">Market Size</h3>
+                    <p class="text-gray-700">Kenya's mitumba market exceeds KSh 40 billion annually with consistent year-over-year growth in both physical and digital sales channels.</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-md hover-scale transition duration-300">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-800 mb-3">Customer Base</h3>
+                    <p class="text-gray-700">Core consumers include urban youth, professionals, families, and resellers with increasing demand for premium "first camera" bales.</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-md hover-scale transition duration-300">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-800 mb-3">Compliance</h3>
+                    <p class="text-gray-700">Full regulatory compliance including business registration, KRA PIN, import licenses, fumigation certificates, and staff registrations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Locations Section -->
+    <section id="locations" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-blue-800 mb-4">Strategic Locations & Supplier Network</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white rounded-lg overflow-hidden shadow-md">
+                    <thead class="bg-blue-800 text-white">
+                        <tr>
+                            <th class="py-3 px-4 text-left">Location</th>
+                            <th class="py-3 px-4 text-left">Target Market</th>
+                            <th class="py-3 px-4 text-left">Daily Footfall</th>
+                            <th class="py-3 px-4 text-left">Local Contact</th>
+                            <th class="py-3 px-4 text-left">Strategic Insight</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr class="hover:bg-blue-50">
+                            <td class="py-4 px-4 font-medium">River Road, CBD</td>
+                            <td class="py-4 px-4">Office workers, youth</td>
+                            <td class="py-4 px-4">2,000+</td>
+                            <td class="py-4 px-4">Mr. Kamau (Agent)<br>0722 555 888</td>
+                            <td class="py-4 px-4">High foot traffic, corporate proximity</td>
+                        </tr>
+                        <tr class="hover:bg-blue-50">
+                            <td class="py-4 px-4 font-medium">Eastleigh 12th</td>
+                            <td class="py-4 px-4">Somali, Ethiopian</td>
+                            <td class="py-4 px-4">3,500+</td>
+                            <td class="py-4 px-4">Ms. Halima (Landlady)<br>0711 333 222</td>
+                            <td class="py-4 px-4">Wholesale hub, ethnic market synergy</td>
+                        </tr>
+                        <tr class="hover:bg-blue-50">
+                            <td class="py-4 px-4 font-medium">Kasarani/Mwiki</td>
+                            <td class="py-4 px-4">Students, families</td>
+                            <td class="py-4 px-4">1,800+</td>
+                            <td class="py-4 px-4">Mr. Otieno (Caretaker)<br>0733 444 111</td>
+                            <td class="py-4 px-4">Growing residential area, student base</td>
+                        </tr>
+                        <tr class="hover:bg-blue-50">
+                            <td class="py-4 px-4 font-medium">Gikomba Market</td>
+                            <td class="py-4 px-4">Traders, bulk buyers</td>
+                            <td class="py-4 px-4">6,000+</td>
+                            <td class="py-4 px-4">Mr. Mwangi (Stall Allocator)<br>0700 222 111</td>
+                            <td class="py-4 px-4">Largest mitumba market, bulk sourcing</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Financial Highlights Section -->
+    <section id="financials" class="py-16 stats-gradient text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Financial Highlights</h2>
+                <div class="w-24 h-1 bg-yellow-400 mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-6 border border-white border-opacity-20 hover-scale transition duration-300">
+                    <div class="text-4xl font-bold mb-2">KSh 1M+</div>
+                    <div class="text-lg">Monthly Profit by Month 7</div>
+                </div>
+                <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-6 border border-white border-opacity-20 hover-scale transition duration-300">
+                    <div class="text-4xl font-bold mb-2">KSh 172M+</div>
+                    <div class="text-lg">5-Year Cumulative Profit</div>
+                </div>
+                <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-6 border border-white border-opacity-20 hover-scale transition duration-300">
+                    <div class="text-4xl font-bold mb-2">17%</div>
+                    <div class="text-lg">Investor Return in 3 Months</div>
+                </div>
+            </div>
+            
+            <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-6 border border-white border-opacity-20 hover-scale transition duration-300 max-w-4xl mx-auto">
+                <h3 class="text-xl font-bold mb-4 text-center">Month-by-Month Projection (First 3 Months)</h3>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full">
+                        <thead>
+                            <tr class="border-b border-white border-opacity-20">
+                                <th class="py-3 px-4 text-left">Month</th>
+                                <th class="py-3 px-4 text-left">Revenue (KSh)</th>
+                                <th class="py-3 px-4 text-left">Expenses (KSh)</th>
+                                <th class="py-3 px-4 text-left">Loan Repayment</th>
+                                <th class="py-3 px-4 text-left">Net Profit</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-white divide-opacity-20">
+                            <tr>
+                                <td class="py-4 px-4">1</td>
+                                <td class="py-4 px-4">1,200,000</td>
+                                <td class="py-4 px-4">157,000</td>
+                                <td class="py-4 px-4">390,000</td>
+                                <td class="py-4 px-4 font-bold">653,000</td>
+                            </tr>
+                            <tr>
+                                <td class="py-4 px-4">2</td>
+                                <td class="py-4 px-4">1,320,000</td>
+                                <td class="py-4 px-4">157,000</td>
+                                <td class="py-4 px-4">390,000</td>
+                                <td class="py-4 px-4 font-bold">773,000</td>
+                            </tr>
+                            <tr>
+                                <td class="py-4 px-4">3</td>
+                                <td class="py-4 px-4">1,452,000</td>
+                                <td class="py-4 px-4">157,000</td>
+                                <td class="py-4 px-4">390,000</td>
+                                <td class="py-4 px-4 font-bold">905,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Revenue Streams Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-blue-800 mb-4">Business Units & Revenue Streams</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white rounded-xl p-6 shadow-md hover-scale transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-store text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-800">Retail Stalls</h3>
+                    </div>
+                    <p class="text-gray-700">4 prime locations selling 150+ items daily with average profit of KSh 150-400 per item through strategic physical locations.</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-md hover-scale transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-mobile-alt text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-800">Digital Sales</h3>
+                    </div>
+                    <p class="text-gray-700">Leveraging Instagram, TikTok, WhatsApp, Jiji, and Facebook for live sales sessions and direct-to-customer marketing.</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-md hover-scale transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-boxes text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-800">Wholesale/B2B</h3>
+                    </div>
+                    <p class="text-gray-700">Bulk sales to other traders and businesses with volume discounts and consistent supply chain relationships.</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-md hover-scale transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-money-bill-wave text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-800">M-Pesa Agency</h3>
+                    </div>
+                    <p class="text-gray-700">Cross-selling commissions from mobile money transactions at all retail locations for additional revenue stream.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investor Section -->
+    <section id="investors" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-blue-800 mb-4">Investor Opportunities</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-blue-50 rounded-xl p-8 shadow-md hover-scale transition duration-300 floating-card">
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 mb-6 md:mb-0 md:pr-8">
+                            <h3 class="text-2xl font-bold text-blue-800 mb-4">Investment Details</h3>
+                            <ul class="space-y-3 text-gray-700">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Loan Amount: KSh 1,000,000</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Interest: 17% flat (KSh 170,000)</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Total Repayment: KSh 1,170,000</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Repayment Period: 3 months</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="md:w-1/2 border-l-0 md:border-l border-blue-200 md:pl-8">
+                            <h3 class="text-2xl font-bold text-blue-800 mb-4">Investor Benefits</h3>
+                            <ul class="space-y-3 text-gray-700">
+                                <li class="flex items-start">
+                                    <i class="fas fa-shield-alt text-blue-500 mt-1 mr-2"></i>
+                                    <span>Legal agreements and transparent reporting</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-chart-pie text-blue-500 mt-1 mr-2"></i>
+                                    <span>17% return in just 3 months</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-search-dollar text-blue-500 mt-1 mr-2"></i>
+                                    <span>Monthly financial audits</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-expand text-blue-500 mt-1 mr-2"></i>
+                                    <span>Highly scalable business model</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 pt-8 border-t border-blue-200">
+                        <h3 class="text-xl font-bold text-blue-800 mb-4 text-center">Frequently Asked Questions</h3>
+                        <div class="space-y-4">
+                            <div class="border border-blue-200 rounded-lg p-4">
+                                <h4 class="font-bold text-blue-800 flex items-center justify-between cursor-pointer investor-question">
+                                    <span>What is the expected ROI and timeline?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </h4>
+                                <div class="investor-answer mt-3 hidden">
+                                    <p class="text-gray-700">Investors receive full repayment of KSh 1 million plus 17% interest (KSh 1.17M total) within 3 months, supported by conservative profit projections and lean expense management.</p>
+                                </div>
+                            </div>
+                            <div class="border border-blue-200 rounded-lg p-4">
+                                <h4 class="font-bold text-blue-800 flex items-center justify-between cursor-pointer investor-question">
+                                    <span>How are expenses controlled without compromising growth?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </h4>
+                                <div class="investor-answer mt-3 hidden">
+                                    <p class="text-gray-700">Through flexible stall leases, lean staffing with commission incentives, organic marketing, boda-boda logistics, and minimal float management.</p>
+                                </div>
+                            </div>
+                            <div class="border border-blue-200 rounded-lg p-4">
+                                <h4 class="font-bold text-blue-800 flex items-center justify-between cursor-pointer investor-question">
+                                    <span>How is investor money protected?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </h4>
+                                <div class="investor-answer mt-3 hidden">
+                                    <p class="text-gray-700">Transparent reporting, partial equity options, and legal agreements ensure investor protection and confidence.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-blue-800 text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
+                <div class="w-24 h-1 bg-yellow-400 mx-auto"></div>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white text-gray-800 rounded-xl p-8 shadow-lg hover-scale transition duration-300">
+                    <div class="flex flex-col md:flex-row">
+                        <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                            <h3 class="text-xl font-bold text-blue-800 mb-4">Get In Touch</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-start">
+                                    <div class="bg-blue-100 p-2 rounded-full mr-4">
+                                        <i class="fas fa-phone-alt text-blue-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-blue-800">Hotline/WhatsApp</h4>
+                                        <p class="text-gray-700">+254 707 833 903</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="bg-blue-100 p-2 rounded-full mr-4">
+                                        <i class="fas fa-envelope text-blue-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-blue-800">Email</h4>
+                                        <p class="text-gray-700">davemunene901@gmail.com</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="bg-blue-100 p-2 rounded-full mr-4">
+                                        <i class="fab fa-instagram text-blue-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-blue-800">Instagram</h4>
+                                        <p class="text-gray-700">@kinghood37</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="bg-blue-100 p-2 rounded-full mr-4">
+                                        <i class="fab fa-tiktok text-blue-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-blue-800">TikTok</h4>
+                                        <p class="text-gray-700">@kinghoodke</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:w-1/2 md:pl-8">
+                            <h3 class="text-xl font-bold text-blue-800 mb-4">Send Us a Message</h3>
+                            <form class="space-y-4">
+                                <div>
+                                    <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
+                                    <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                                    <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                </div>
+                                <div>
+                                    <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                                    <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"></textarea>
+                                </div>
+                                <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg transition duration-300">
+                                    Send Message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center mr-3">
+                            <i class="fas fa-crown text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold">KINGHOOD ENTERPRISES</h3>
+                            <p class="text-xs text-blue-300">Kenya's Premier Mitumba Empire</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-blue-300 hover:text-white">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-blue-300 hover:text-white">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-blue-300 hover:text-white">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-blue-300 hover:text-white">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-blue-800 mt-6 pt-6 text-center md:text-left">
+                <p class="text-sm text-blue-300">© 2023 Kinghood Enterprises. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // FAQ toggles
+        const faqQuestions = document.querySelectorAll('.investor-question');
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', function() {
+                const answer = this.nextElementSibling;
+                const icon = this.querySelector('i');
+                
+                answer.classList.toggle('hidden');
+                if (answer.classList.contains('hidden')) {
+                    icon.classList.remove('fa-chevron-up');
+                    icon.classList.add('fa-chevron-down');
+                } else {
+                    icon.classList.remove('fa-chevron-down');
+                    icon.classList.add('fa-chevron-up');
+                }
+            });
+        });
+
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                
+                // Close mobile menu if open
+                const mobileMenu = document.getElementById('mobile-menu');
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
